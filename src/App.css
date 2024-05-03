@@ -1,0 +1,152 @@
+
+.App {
+  text-align: center;
+  padding: 40px;
+  background-image: url('img/bg2.jpg'); /* เปลี่ยน your-background-image-url.jpg เป็น URL ของภาพพื้นหลังที่คุณต้องการใช้ */
+  background-size: cover; /* ปรับขนาดภาพพื้นหลังเพื่อเต็มพื้นที่ของคอนเทนเนอร์ */
+  background-position: center;
+  height: 100vh; /* ทำให้ความสูงเต็มจอ */
+}
+
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.form-left {
+  float: right;
+  margin-right: 400px; /* กำหนดระยะห่างขวา */
+}
+
+
+
+.form-right {
+  float: left;
+  margin-left: 400px; /* กำหนดระยะห่างขวา */
+}
+
+.form-left select,
+.form-right select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-left-pokemon,
+.form-right-pokemon {
+  margin-top: 10px;
+}
+
+
+
+.form-left-pokemon,
+.form-right-pokemon {
+  display: flex;
+  flex-wrap: wrap; /* ทำให้เรียงในรูปแบบ Wrap */
+}
+
+.random-name {
+  background-color: #080c09;
+  padding: 5px;
+  margin-bottom: 10px;
+  flex-basis: calc(50% - 20px); /* คำนวณความกว้างของแต่ละช่อง */
+}
+
+
+
+.additional-info {
+  margin-top: 30px;
+}
+
+.additional-info h2 {
+  margin-bottom: 10px;
+}
+
+.additional-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.additional-info li {
+  margin-bottom: 5px;
+}
+
+.additional-info .move-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.additional-info .move {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.form-left-pokemon img {
+  width: 300px; /* กำหนดความกว้าง */
+  height: 300px; /* กำหนดความสูง */
+  object-fit: cover; /* ทำให้ภาพปรับตัวให้เต็มขนาดของตำแหน่ง */
+  transform: scaleX(-1); /* หันหลัง */
+}
+
+.form-right-pokemon img {
+  width: 300px; /* กำหนดความกว้าง */
+  height: 300px; /* กำหนดความสูง */
+  object-fit: cover; /* ทำให้ภาพปรับตัวให้เต็มขนาดของตำแหน่ง */
+ 
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bouncing {
+  animation: bounce 0.5s;
+}
+
+.headerWithLogo{
+  display: flex;
+  justify-content: space-around;
+}
+.random-name-button {
+  margin-bottom: 10px; /* กำหนดระยะห่างด้านล่างของปุ่ม */
+  margin-right: 10px; /* กำหนดระยะห่างด้านขวาของปุ่ม */
+}
+.stat-info {
+  margin-top: 10px;
+}
+
+.stat-info p {
+  margin: 5px 0;
+}
+
+.form-left img,
+.form-right img {
+  width: 200px; /* ปรับขนาดของรูป Pokemon */
+  height: auto; /* ปรับความสูงให้พอดีกับความกว้าง */
+  margin-bottom: 20px;
+}
